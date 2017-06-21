@@ -1,0 +1,27 @@
+<!-- <a href="/tasks">Task Index</a>
+
+<h1><%= @task.title %></h1>
+
+<p><%= @task.description %></p> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @task.title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel panel-default" style="margin-top: 50px;">
+          <div class="panel-heading">
+            <h3><a href="/tasks/<%= @task.id %>"><%= @task.title %></a></h3>
+          </div>
+          <div class="panel-body">
+            <p><%= @task.description %></p>
+          </div>
+      </div>
+      <a href="/tasks">Task Index</a>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,33 @@
-<h1>Welcome to the Task Manager</h1>
-
-<ul>
-  <li><a href="/tasks">Task Index</a></li>
-  <li><a href="/tasks/new">New Task</a></li>
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1>Welcome to the Task Manager</h1>
+      <div class="row" style="margin-top: 50px">
+        <div class="col-md-3 col-md-offset-2">
+          <a href="/tasks" style="text-decoration: none; color: black">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                See All Tasks
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-md-offset-2">
+          <a href="/tasks/new" style="text-decoration: none; color: black">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                Create New Task
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

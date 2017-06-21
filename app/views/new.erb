@@ -1,0 +1,36 @@
+<!-- <form action="/tasks" method="post">
+  <p>Enter a new task:</p>
+  <input type="text" name="task[title]"/><br>
+  <textarea name="task[description]"></textarea><br>
+  <input type="submit">
+  <br>
+
+  <a href="/">Back to Dashboard</a>
+</form> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Enter a new Task</h2>
+      <form action="/tasks" method="post">
+        <div class="form-group">
+          <label for="task_title">Title:</label>
+          <input type="text" class="form-control" id="task_title" name="task[title]">
+        </div>
+        <div class="form-group">
+          <label for="task_descrip">Description:</label>
+          <textarea class="form-control" name="task[description]" id="task_descrip"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <br>
+      <a href="/">Back to Dashboard</a>
+    </div>
+  </body>
+</html>
