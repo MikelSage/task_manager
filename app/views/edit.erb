@@ -1,0 +1,35 @@
+<!-- <form action="/tasks/<%= @task.id %>" method="post">
+  <p>Edit</p>
+  <input type="hidden" name="_method" value="PUT">
+  <input type="text" name="task[title]" value="<%= @task.title %>"/><br>
+  <textarea name="task[description]" rows="8" cols="80"><%= @task.description %></textarea><br>
+  <input type="submit">
+</form> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Edit Task</h2>
+      <form action="/tasks/<%= @task.id %>" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="form-group">
+          <label for="task_title">Title:</label>
+          <input type="text" class="form-control" id="task_title" name="task[title]" value="<%= @task.title %>">
+        </div>
+        <div class="form-group">
+          <label for="task_descrip">Description:</label>
+          <textarea class="form-control" name="task[description]" id="task_descrip"><%= @task.description %></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <br>
+      <a href="/tasks">Back to Task Index</a>
+    </div>
+  </body>
+</html>
